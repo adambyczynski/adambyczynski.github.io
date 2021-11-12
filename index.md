@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+JĘZYK C (PRINTF ORAZ SCANF) 
 
-You can use the [editor on GitHub](https://github.com/adambyczynski/adambyczynski.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+1. <b>printf<\b>
+-printf("Twój ciąg znaków"); 
+Następuje wywołanie funkcji printf() z argumentem zawartym w nawiasach
+(ciag znaków musi znajdować się w cudzysłowiu). 
+Wypisanie ciągu znaków jest tylko jedną z możliwości – możemy również wypisać wartość zmiennej. 
+Jednak w tym przypadku, programista musi znać typ zmiennej, wówczas dla zmiennej o nazwie MojaZmienna typu integer
+ możesz zrobić to nastepująco:
+-printf("%d", MojaZmienna); 
+W takim wypadku, wywołana zostanie funkcja printf() a argumentem będzie ciąg znaków „%d” 
+(znak % informuje program, że w tym miejscu zostanie użyta zmienna, natomiast literka po % - w naszym wypadku d – informuje program o typie tej zmiennej, tutaj jest to int)
+nastepnie po przecinku, wypisujemy nazwe zmiennej. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+2. <b>scanf<\b>
+-scanf("%d", &zmienna);
+Na początku używamy słowa kluczowego scanf,  a następnie otwieramy nawias. 
+W cudzysłowiu ustalamy typ zmiennej (w naszym przypadku będzie to %d, czyli integer), a następnie po przecinku wprowadzamy nazwę zmiennej, do której chcemy przypisać wartość, poprzedzoną znakiem "&".
 
-### Markdown
+3. <b>WAŻNE INFORMACJE</b>:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/adambyczynski/adambyczynski.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+• Instrukcja printf sluzy do wypisywania tekstu na ekran.
+• Za pomocą instrukcji printf możemy wypisywać także wartości zmiennych.
+• Instrukcja scanf sluzy z czytania tekstu wpisanego przez uzytkownika i wykonywania na nim konkretnych operacji jak np. przypisanie do zmiennej.
+• Chcąc wypisać kilka zmiennych w funkcji printf pamiętaj aby wypisywać je w odpowiedniej kolejności! 
